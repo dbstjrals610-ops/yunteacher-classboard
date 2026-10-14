@@ -34,7 +34,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .net{background:var(--warnbg);color:var(--warn);padding:8px 12px;font-size:.88rem;text-align:center}
 #insight p{margin:6px 0;font-size:.95rem}
 svg text{fill:var(--mut);font-size:12px}
-.clsrow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 12px}
+.clsrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 12px}
 .clsrow button{background:transparent;color:var(--tx);border:1px solid var(--bd);padding:10px 0;font-size:1.05rem}
 .clsrow button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 /* 입장 화면 */
@@ -134,12 +134,12 @@ svg text{fill:var(--mut);font-size:12px}
    1) DB_URL: Firebase Realtime Database 주소 (끝에 / 없이)
       예: "https://my-class-default-rtdb.asia-southeast1.firebasedatabase.app"
       비워 두면 '체험 모드'(이 기기에만 저장)로 동작합니다.
-   2) TEACHER_PIN:sciencelove 교사 로그인 암호 (예: "7391"). 비워 두면 교사 로그인이 막혀 있습니다.
+   2) TEACHER_PIN: 교사 로그인 암호 (예: "7391"). 비워 두면 교사 로그인이 막혀 있습니다.
       ※ 이 값은 페이지 소스에서 볼 수 있으므로, 학생이 알기 어려운 값으로 정하세요.
    3) CLASSES: 반 목록 */
-const DB_URL = "";
-const TEACHER_PIN = "";
-const CLASSES = [1,2,3,4,5,6,7,8];
+const DB_URL = "https://yunteacher-6914e-default-rtdb.asia-southeast1.firebasedatabase.app";
+const TEACHER_PIN = "sciencelove";
+const CLASSES = [1,2,3,4,5,6,7,8,9];
 const POLL_MS = 5000;
 /* ================= */
 
